@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  myapp:
+    build: .
+    volumes:
+      - ./myapp:/app/myapp  # Mount the entire app directory
+    ports:
+      - "8000:8000"
